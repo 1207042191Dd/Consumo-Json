@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActividadRegistroUsuario"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <TextView
+        android:id="@+id/txtTiitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Formulario de Inscripción de Usuarios"
+        android:textAlignment="center"
+        android:textColor="#2236AF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/imgUsr"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tilApellido"
+        app:srcCompat="@drawable/person" />
+
+    <ImageView
+        android:id="@+id/imgUsr"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tilNombre"
+        app:srcCompat="@drawable/genre" />
+
+    <ImageView
+        android:id="@+id/imgUsr"
+        android:layout_width="60dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tilNombre"
+        app:srcCompat="@drawable/cedula2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNombre"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Número de Cedúla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgUsr"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txtTiitulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="number"
+            android:maxLength="10"
+            android:digits="0123456789"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilApellido"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+
+        android:layout_marginTop="5dp"
+        android:hint="Nombres"
+        app:layout_constraintEnd_toEndOf="@+id/tilNombre"
+        app:layout_constraintStart_toStartOf="@+id/tilNombre"
+        app:layout_constraintTop_toBottomOf="@+id/tilNombre">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="textCapCharacters"
+            android:maxLength="500"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/imgPhone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tilPhone"
+        app:srcCompat="@drawable/phone" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPhone"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Telèfono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="295dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Telèfono"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="295dp"
+                android:layout_marginEnd="30dp"
+                android:hint="Telèfono"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="295dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Telèfono"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="10"
+            android:digits="0123456789"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imgCorreo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tilCorreo"
+        app:srcCompat="@drawable/email" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCorreo"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:hint="Correo"
+        app:layout_constraintEnd_toEndOf="@+id/tilPhone"
+        app:layout_constraintStart_toStartOf="@+id/tilPhone"
+        app:layout_constraintTop_toBottomOf="@+id/tilPhone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtcorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/imgFechaNac"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tilFechaNac"
+        app:srcCompat="@drawable/calendar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFechaNac"
+        android:layout_width="166dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:hint="dd/mm/aa"
+        app:layout_constraintEnd_toEndOf="@+id/tilCorreo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tilCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/tilCorreo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtFechaNac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCiudad"
+        android:layout_width="290dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="33dp"
+        android:hint="Ciudad"
+        app:layout_constraintBottom_toTopOf="@+id/btGrabar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilFechaNac"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtciudad"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            android:maxLength="500"
+            />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/tggenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/tilFechaNac"
+        app:layout_constraintTop_toBottomOf="@+id/tilFechaNac"
+        app:singleSelection="true">
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+    <Button
+        android:id="@+id/btGrabar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btGrabar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="284dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilApellido">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femenino"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
